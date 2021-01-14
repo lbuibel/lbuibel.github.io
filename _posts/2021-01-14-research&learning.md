@@ -4,5 +4,7 @@ title: Research & Learning
 ---
 
 
-<!-- ![_config.yml]({{ site.baseurl }}/images/config.png) -->
+![_config.yml]({{ site.baseurl }}/images/code.jpg)
+
+![coding on a mac](images/code.jpg)
 
