@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
-
-## About Me
 ![Tahoe - Flume Trail](images/tahoe.jpg)
 
 Currently a senior at Utah Valley University studying website & application design and development. Outside of school and work most of my hobbies involve things with two wheels, motorcycles, road bikes, mountain bikes etc. If I'm not working on developing websites, I'm probably doing one of the latter.
