@@ -7,7 +7,7 @@ Getting into the nitty gritty parts of git
 
 ![_config.yml]({{ site.baseurl }}/images/rebase/rebase.png)
 
-### Git Rebase
+## Git Rebase
 <br>
 
 #### What is git Rebase?
@@ -121,7 +121,7 @@ If you were to rebase your feature branch to the master branch first, then pull 
 <br>
 <br>
 
-### Git Reset, Checkout & Reverse
+## Git Reset, Checkout & Reverse
 
 <br>
 
@@ -145,7 +145,7 @@ After checking out a specific commit, you can see the warning about being in a "
 <br>
 
 #### What is Git Reset?
-Similar to git checkout, git reset takes a git id as a parameter and jumps back to that commmit. The key difference here is that it's removing the commits inbetween where you are and the commit you specificied. Here is an example using the same checkout repo as before:
+Similar to git checkout, git reset takes a git id as a parameter and jumps back to that commit. The key difference here is that it's removing the commits in-between where you are and the commit you specified. Here is an example using the same checkout repo as before:
 
 ![_config.yml]({{ site.baseurl }}/images/reset/reset-before.png)
 
@@ -156,7 +156,37 @@ Reseting back to commit "change 3" skips over and removes "commit 4". After runn
 
 <br>
 
-#### What is Git Reverse?
-Git reset
+#### What is Git Revert?
+Unlike resetting a git commit, reverting keeps your git history and commits more in tact, and reverts the changes made only in a specified commit. Say you had commit 1, 2, 3 and are about to make a 4th commit when you realizes the changes you made for commit 2 are no longer needed. If you used git reset 2, it'd delete the changes you made in commit 3, but if you used git revert 2 instead, the changes made in your third commit wouldn't be deleted.
+
+Here is an example:
+
+![_config.yml]({{ site.baseurl }}/images/revert/revert1.png)
+
+![_config.yml]({{ site.baseurl }}/images/revert/revert2.png)
+
+Reverting keeps the coming on file, removes the changes made in that commit after merging the changes.
 
 <br>
+
+## Git Submodules
+
+![_config.yml]({{ site.baseurl }}/images/submodules.png)
+
+
+#### What are git submodules?
+
+A git submodule is a git repository inside another git repository, with its own history and commits.
+
+<br>
+
+#### When would you use a submodule?
+
+If your project dependancies need to be tightly controlled and tracked, making them their own repo could be a good idea to track changes. Another scenario that might be beneficial for a sub-dependancy is when and if you outsource a portion of a project to another team. 
+
+<br>
+
+#### What are the advantages and disadvantages of git submodules?
+
+One of the advantages I mentioned earlier is that it gives you the option to closely follow changes within a project like a sub-dependency folder, or server folder. One of the downsides of a submodule is that it could add complications to forking, cloning, and branching.
+
