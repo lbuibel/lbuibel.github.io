@@ -5,6 +5,11 @@ title: Advanced Git
 
 Getting into the nitty gritty parts of git
 
+![_config.yml]({{ site.baseurl }}/images/rebase/rebase.png)
+
+### Git Rebase
+<br>
+
 #### What is git Rebase?
 
 Git rebase is a way of aligning the git history from different branches into a final commit. Rather than having your project history spread out over multiple branches, git rebase simplifies project history by bringing everything together.
@@ -112,3 +117,37 @@ If you’re working with a remote repo in a team setting and pull down a copy of
 After working on your feature branch, you’ll want to jump back over to the master branch and pull down any changes from the remote repo to make sure your copy of the master branch is up to date. Now that your master branch is up to date with the master branch on the remote repo, you can jump back over to the feature branch and rebase that branch to the master branch without issues.
 
 If you were to rebase your feature branch to the master branch first, then pull down updates to the master branch from the remote after the fact, you could loose work being that your commits from the feature branch that are now in line with the master branch, will be washed out by the commits on the master branch pulled down from the remote repo that your master branch is out of sync.
+
+<br>
+<br>
+
+### Git Reset, Checkout & Reverse
+
+<br>
+
+#### What is Git Reset?
+Git reset
+
+<br>
+
+#### What is Git Checkout?
+As seen in the rebase example, git checkout can be used to move back and forth between branches by stating "checkout" and then the name of whichever branch you want to jump over to.
+
+Git checkout can also be used to view specific commits in your code by stating "checkout" and the id of the commit. Something key to note here is that when you move your HEAD pointer to a commit, you've entered what's called a "detached head state". If you were to make a commit in this time, it creates a commit that isn't attached to any sort of branch.
+
+If you wanted to go back to a certain commit and create a branch that stemmed from that commit, you could no problem. Creating a branch first helps you avoid creating orphaned commits that aren't attached to any branch.
+
+Examples
+![_config.yml]({{ site.baseurl }}/images/checkout/git-log.png)
+Here you can view a git repo with several commits. After entering "git log" in the terminal you can view each commit with the corresponding id number and commit message. You can use this id to jump strait to that commit using the checkout command.
+
+<br>
+
+![_config.yml]({{ site.baseurl }}/images/checkout/git-checkout.png)
+
+After checking out a specific commit, you can see the warning about being in a "detached head state" and how you have the option to create a branch from this moment in git history. To jump back to the current state of the project, you can either jump back to a specific branch or just back to master.
+
+<br>
+
+#### What is Git Reverse?
+
