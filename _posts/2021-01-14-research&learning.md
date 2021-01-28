@@ -3,7 +3,7 @@ layout: post
 title: Research & Learning
 ---
 
-###### Unlike coding in movies, writing solid code requires time and research.
+Unlike coding in movies, writing solid code requires time and research.
 
 ![_config.yml]({{ site.baseurl }}/images/code.jpg)
 
