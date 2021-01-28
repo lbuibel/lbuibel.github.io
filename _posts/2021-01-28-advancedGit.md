@@ -125,11 +125,6 @@ If you were to rebase your feature branch to the master branch first, then pull 
 
 <br>
 
-#### What is Git Reset?
-Git reset
-
-<br>
-
 #### What is Git Checkout?
 As seen in the rebase example, git checkout can be used to move back and forth between branches by stating "checkout" and then the name of whichever branch you want to jump over to.
 
@@ -149,5 +144,19 @@ After checking out a specific commit, you can see the warning about being in a "
 
 <br>
 
-#### What is Git Reverse?
+#### What is Git Reset?
+Similar to git checkout, git reset takes a git id as a parameter and jumps back to that commmit. The key difference here is that it's removing the commits inbetween where you are and the commit you specificied. Here is an example using the same checkout repo as before:
 
+![_config.yml]({{ site.baseurl }}/images/reset/reset-before.png)
+
+Reseting back to commit "change 3" skips over and removes "commit 4". After running this command you are left with:
+
+![_config.yml]({{ site.baseurl }}/images/reset/reset-after.png)
+
+
+<br>
+
+#### What is Git Reverse?
+Git reset
+
+<br>
