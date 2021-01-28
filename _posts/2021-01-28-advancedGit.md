@@ -3,6 +3,8 @@ layout: post
 title: Advanced Git
 ---
 
+##### Getting into the nitty gritty parts of git
+
 ![_config.yml]({{ site.baseurl }}/images/git.jpeg)
 
 #### What is git Rebase?
