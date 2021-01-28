@@ -171,7 +171,7 @@ Reverting keeps the coming on file, removes the changes made in that commit afte
 
 ## Git Submodules
 
-![_config.yml]({{ site.baseurl }}/images/submodules.png)
+![_config.yml]({{ site.baseurl }}/images/submodule.png)
 
 
 #### What are git submodules?
