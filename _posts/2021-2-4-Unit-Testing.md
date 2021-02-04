@@ -5,7 +5,7 @@ title: Unit Testing
 
 Why you should be testing your code
 
-![_config.yml]({{ site.baseurl }}/images/testing.jpeg)
+![_config.yml]({{ site.baseurl }}/images/testing.jpg)
 
 ### What is unit testing?
 Unit testing is a method of breaking your code into junks and testing those individual "units". A unit can be several different things depending on what you're trying to test. It can be a single line, a function, multiple functions etc. Depending on how detailed you want your testing to be will determine how low of level you test on.
